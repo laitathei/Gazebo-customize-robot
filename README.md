@@ -47,5 +47,6 @@
 1. #### `<Child link>` is the extended part from main body
 
 ### Result
-
+![image](https://github.com/laitathei/Gazebo-customize-robot/blob/main/Image/gazebo_result.jpeg)
+![image](https://github.com/laitathei/Gazebo-customize-robot/blob/main/Image/rviz_result.jpeg)
 
