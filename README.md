@@ -15,22 +15,14 @@
 <?xnl version="1.0" ?>
 <robot name = "my_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
 ```
-#### specifies the xnl version and the robot name
-
-
-
-
+#### Specifies the xnl version and the robot name
 
 ```XML
 <link>
   ....
 </link>
 ```
-#### The description for the component have to declare inside link tap
-
-
-
-
+#### The description for the component have to declare inside `<link>`
 
 ```XML
 <visual>
@@ -39,12 +31,8 @@
 			</geometry>
 </visual>
 ```
-#### The description for the component will show in Gazebo environment or rviz after declared inside visual tap
-#### The geometry tap use to define the shape of the component. For example, box and cylinder
-
-
-
-
+1. #### The description for the component will show in Gazebo environment or rviz after declared inside `<visual>`
+1. #### The `<geometry>` use to define the shape of the component. For example, box and cylinder
 
 ```XML
 <joint>
@@ -53,14 +41,10 @@
   <child link...>
 </joint>
 ```
-#### Joint tap able to link two component together
-#### Origin rpy and xyz responsible for define connection position
-#### Parent link is the chassis or main body
-#### Child link is the extended part from main body
-
-
-
-
+1. #### `<Joint>` able to link two component together
+1. #### `<Origin>` rpy and xyz responsible for define connection position
+1. #### `<Parent link>` is the chassis or main body
+1. #### `<Child link>` is the extended part from main body
 
 ### Result
 
