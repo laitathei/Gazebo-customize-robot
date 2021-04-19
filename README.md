@@ -51,5 +51,5 @@
 ![image](https://github.com/laitathei/Gazebo-customize-robot/blob/main/Image/rviz_result.jpeg)
 
 ### Move the car 
-####Forward:rostopic pub -r 30 /my_robot/Differential_back_controller/cmd_vel geometry_msgs/Twist -- '[1.0,0,0]' '[0,0,0.0]'
-####Backward:rostopic pub -r 30 /my_robot/Differential_back_controller/cmd_vel geometry_msgs/Twist -- '[-1.0,0,0]' '[0,0,0.0]'
+#### Forward:rostopic pub -r 30 /my_robot/Differential_back_controller/cmd_vel geometry_msgs/Twist -- '[1.0,0,0]' '[0,0,0.0]'
+#### Backward:rostopic pub -r 30 /my_robot/Differential_back_controller/cmd_vel geometry_msgs/Twist -- '[-1.0,0,0]' '[0,0,0.0]'
