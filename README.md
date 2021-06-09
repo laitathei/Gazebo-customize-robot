@@ -49,7 +49,10 @@
 ### Result
 ![image](https://github.com/laitathei/Gazebo-customize-robot/blob/main/Image/gazebo_result.jpeg)
 ![image](https://github.com/laitathei/Gazebo-customize-robot/blob/main/Image/rviz_result.jpeg)
-
+### Install Gazebo Controller packages
+```XML
+sudo apt-get install ros-melodic-ros-control ros-melodic-ros-controllers
+```
 ### Move the car 
 #### Forward:rostopic pub -r 30 /my_robot/Differential_back_controller/cmd_vel geometry_msgs/Twist -- '[1.0,0,0]' '[0,0,0.0]'
 #### Backward:rostopic pub -r 30 /my_robot/Differential_back_controller/cmd_vel geometry_msgs/Twist -- '[-1.0,0,0]' '[0,0,0.0]'
