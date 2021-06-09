@@ -59,5 +59,12 @@ sudo apt-get install ros-melodic-joint-state-publisher-gui
 python -m pip install -U matplotlib
 ```
 ### Move the car 
+### Method 1 (directly publish in command line)
 #### Forward:rostopic pub -r 30 /my_robot/Differential_back_controller/cmd_vel geometry_msgs/Twist -- '[1.0,0,0]' '[0,0,0.0]'
 #### Backward:rostopic pub -r 30 /my_robot/Differential_back_controller/cmd_vel geometry_msgs/Twist -- '[-1.0,0,0]' '[0,0,0.0]'
+### Method 2 (using keyboard via teleop_twist_keyboard script)
+```XML
+sudo apt-get install ros-melodic-teleop-twist-keyboard
+rosrun teleop_twist_keyboard teleop_twist_keyboard.py
+```
+### The above program not suitable for every situation. Therefore, we need to modify the code according to our design
