@@ -1,0 +1,28 @@
+#!/usr/bin/env python
+
+import rospy
+from std_msgs.msg import String, Duration, Data
+import message_filters
+from message_filters import TimeSynchronizer, Subscriber, Cache
+
+def part():
+	pub = rospy.Publisher('joint1_position_controller/command', Data, queue_size=30)
+	pub2 = rospy.Publisher('joint2_position_controller/command', Data, queue_size=30)
+	pub3 = rospy.Publisher('joint3_position_controller/command', Data, queue_size=30)
+	pub4 = rospy.Publisher('joint4_position_controller/command', Data, queue_size=30)
+
+	while not rospy.is_shutdown():
+		hello=1.5
+		pub.publish(hello)
+		pub2.publish(hello)
+		pub3.publish(hello)
+		pub4.publish(hello)
+
+		rospy.sleep(rospy.Duration(1))
+
+if __name__ == '__main__':
+
+		rospy.init_node('node', anonymous=True)
+		part()
+		rospy.spin()
+
