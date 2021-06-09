@@ -69,7 +69,11 @@ rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 ```
 ### The above program not suitable for every situation. Therefore, we need to modify the code according to our design
 ### In my design, the robot car is controlled by "/my_robot/Differential_back_controller/cmd_vel" topic
-### Change the /cmd_vel to your controller topic name in line 68, then you can control the car via keyboard now
+### Change the /cmd_vel to your controller topic name in line 68
 ```XML
 self.publisher = rospy.Publisher('/my_robot/Differential_back_controller/cmd_vel', Twist, queue_size = 1)
+```
+### Then you can control the car via keyboard now
+```XML
+rosrun package_name basic_keyboard_control.py
 ```
