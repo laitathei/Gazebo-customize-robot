@@ -3,7 +3,7 @@
 ## Create customize robot using urdf files and camera plugin function
 
 ### Files included
-
+* #### control (store the control program files)
 * #### world (store the customize urdf world files)
 * #### rviz (store the setting that you have make in rviz)
 * #### launch (store the launch files for world, robot model and rviz)
