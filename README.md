@@ -54,6 +54,10 @@
 sudo apt-get install ros-melodic-ros-control ros-melodic-ros-controllers
 sudo apt-get install ros-melodic-joint-state-publisher-gui
 ```
+### Install Matplotlib package
+```XML
+python -m pip install -U matplotlib
+```
 ### Move the car 
 #### Forward:rostopic pub -r 30 /my_robot/Differential_back_controller/cmd_vel geometry_msgs/Twist -- '[1.0,0,0]' '[0,0,0.0]'
 #### Backward:rostopic pub -r 30 /my_robot/Differential_back_controller/cmd_vel geometry_msgs/Twist -- '[-1.0,0,0]' '[0,0,0.0]'
